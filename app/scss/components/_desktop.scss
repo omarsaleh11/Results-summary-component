@@ -1,0 +1,63 @@
+@use "../util" as *;
+@include breakpoint-up("800") {
+ .card {
+  grid-template-columns: repeat(auto-fit, rem(368));
+  border-radius: 30px;
+  box-shadow: 13px 13px 28px 0px var(--main-clr);
+  &-1 {
+   border-radius: 30px;
+   opacity: 0.85;
+   padding: rem(50);
+   padding-top: rem(44);
+   &--circle {
+    padding: rem(39) rem(57.44);
+    h1 {
+     font-size: rem(76);
+    }
+   }
+   &--desc {
+    gap: rem(20) 0;
+    margin-bottom: rem(14);
+    h1 {
+     font-size: rem(28);
+    }
+    p {
+     max-width: 25ch;
+    }
+   }
+  }
+  &-2 {
+   gap: 0;
+   margin: 0;
+  border-radius: 0 30px 30px 0;
+  padding: rem(20) rem(40);
+   &--header {
+    margin-top: rem(20);
+   }
+   ul {
+    margin-top: rem(30);
+    margin-bottom: rem(40);
+    row-gap: rem(16);
+    li {
+     max-width: rem(288);
+     height: rem(56);
+     padding: rem(18);
+    }
+   }
+   .button {
+    margin-bottom: rem(0);
+    button {
+     max-width: rem(288);
+     opacity: 0.8;
+     padding: rem(20) 0;
+     font-size: rem(20);
+     font-weight: 700;
+     &:hover {
+      background: linear-gradient(0deg, var(--bg-clr-fcs) 0%, var(--bg-clr) 100%);
+      opacity: 1;
+     }
+    }
+   }
+  }
+ }
+}

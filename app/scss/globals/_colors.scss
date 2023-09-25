@@ -1,0 +1,81 @@
+:root {
+ --Light-red-li: hsl(0, 100%, 67%);
+ --light-red-dm: hsl(4, 100%, 74%);
+ --yellow-li: hsl(39, 100%, 56%);
+ --yellow-dm: hsl(38, 100%, 63%);
+ --green-li: hsl(166, 100%, 37%);
+ --green-dm: hsl(160, 52%, 59%);
+ --blue-li: hsl(234, 85%, 45%);
+ --blue-dm: hsl(256, 23%, 76%);
+ --main-clr-li: hsl(222, 100%, 96%);
+ --main-clr-dm: hsl(216, 3%, 90%);
+ --secondary-clr-li: #c8c7ff;
+ --secondary-clr-dm: #9d9da1;
+ --third-clr-li: hsl(224, 30%, 27%);
+ --third-clr-dm: hsl(227, 21%, 67%);
+ --bg-clr-li: #7857ff;
+ --bg-clr-dm: #46347e;
+ --bg-clr-fcs-li: #2e2be9;
+ --bg-clr-fcs-dm: #2d2175;
+ --circle-clr-li: #4e21ca;
+ --circle-clr-dm: #341d67;
+ --circle-clr-fcs-li: #2421ca00;
+ --circle-clr-fcs-dm: #281c6700;
+ --white-li: hsl(0, 0%, 100%);
+ --white-dm: hsl(0, 0%, 8%);
+ --black-li: hsl(0, 0%, 8%);
+ --black-dm: hsl(0, 0%, 100%);
+ // logo
+ --about-clr-li: hsl(0, 0%, 95%);
+ --about-clr-dm: hsla(0, 0%, 15%, 1);
+ --logo-bg-li: hsl(0, 0%, 10%);
+ --logo-bg-dm: hsla(0, 0%, 95%, 1);
+ --logo-clr-li: hsl(119, 50%, 39%);
+ --logo-clr-dm: hsl(119, 70%, 58%);
+ --about-clr: var(--about-clr-li);
+ --logo-bg: var(--logo-bg-li);
+ --logo-clr: var(--logo-clr-li);
+ // logo
+ --main-clr: var(--main-clr-li);
+ --secondary-clr: var(--secondary-clr-li);
+ --third-clr: var(--third-clr-li);
+ --bg-clr: var(--bg-clr-li);
+ --bg-clr-fcs: var(--bg-clr-fcs-li);
+ --circle-clr: var(--circle-clr-li);
+ --circle-clr-fcs: var(--circle-clr-fcs-li);
+ --light-red: var(--Light-red-li);
+ --yellow: var(--yellow-li);
+ --green: var(--green-li);
+ --blue: var(--blue-li);
+ --white: var(--white-li);
+ --black: var(--black-li);
+}
+.dark-mode {
+ --main-clr: var(--main-clr-dm);
+ --secondary-clr: var(--secondary-clr-dm);
+ --third-clr: var(--third-clr-dm);
+ --bg-clr: var(--bg-clr-dm);
+ --bg-clr-fcs: var(--bg-clr-fcs-dm);
+ --circle-clr: var(--circle-clr-dm);
+ --circle-clr-fcs: var(--circle-clr-fcs-dm);
+ --light-red: var(--light-red-dm);
+ --yellow: var(--yellow-dm);
+ --green: var(--green-dm);
+ --blue: var(--blue-dm);
+ --white: var(--white-dm);
+ --black: var(--black-dm);
+ .card {
+  box-shadow: 13px 13px 28px 0px hsla(222, 100%, 96%, 0.1);
+  button {
+   color: var(--black);
+  }
+ }
+ img {
+  filter: saturate(20) contrast(200%);
+ }
+ // logo
+ --about-clr: var(--about-clr-dm);
+ --logo-bg: var(--logo-bg-dm);
+ --logo-clr: var(--logo-clr-dm);
+ // logo
+}
